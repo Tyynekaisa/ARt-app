@@ -18,7 +18,6 @@ async function startAR() {
         container: document.body,
         imageTargetSrc: "assets/targets/gemstone_targets.mind",
         maxTrack: 3
-
     })
 
     const { renderer, cssRenderer, cssScene, scene, camera } = mindARThreeJs
