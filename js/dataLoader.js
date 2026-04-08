@@ -11,7 +11,7 @@ export function loadModelData() {
   if (dataPromise) return dataPromise;
 
   // Muuten aloitetaan lataus
-  dataPromise = fetch('../data/gemstones.json')
+  dataPromise = fetch('/data/gemstones.json')
     .then(res => res.json())
     .then(json => {
       modelData = json;
