@@ -1,0 +1,583 @@
+{
+    "01_Audrey": {
+        "title": "Audrey",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 60,
+                "width": 50
+            },
+            "gemstone": "Ovaali keltainen timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2021,
+            "price": 720
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Timantti voi olla lähes minkä tahansa värinen, mutta <b>keltaiset</b> ja ruskeat sävyt ovat yleisimpiä. Sävyt määräytyvät aineessa olevien epäpuhtauksien mukaan; keltaisen sävyn antavat typpiatomit.</p>",
+            "cut": "<p>Ovaalihiontainen timantti tarjoaa briljanttihionnan kaltaista säihkettä, mutta sen pitkänomainen muoto saa kiven näyttämään suuremmalta kuin mikä on sen todellinen karaattipaino.</p>"
+        },
+        "actress": {
+            "name": "Audrey Hepburn",
+            "years": "1929-1993",
+            "movies": "Loma Roomassa (1953); Aamiainen Tiffanylla (1961); My Fair Lady (1964)",
+            "biography": "<p>Audrey Hepburn oli englantilais-hollantilainen Oscar-palkittu näyttelijä, malli ja hyväntekijä...</p>"
+        },
+        "target": 0,
+        "model": "audrey.glb",
+        "image": "01_Audrey.png"
+    },
+
+    "02_Ava": {
+        "title": "Ava",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 40,
+                "width": 30
+            },
+            "gemstone": "Ovaali vaaleanpunainen safiiri",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2019,
+            "price": 450
+        },
+        "gemstone": {
+            "stone": "<p><b>Safiiri</b> on korundimineraalin jalokivilaatu, joka tunnetaan kovuudestaan ja kirkkaista väreistään.</p>",
+            "color": "<p>Vaaleanpunaiset safiirit saavat värinsä kromista ja symboloivat lempeyttä ja rakkautta. Vaaleanpunaisen safiirin sävy vaihtelee hennosta pastellista syvempään pinkkiin, ja sen pehmeä hehku tekee siitä romanttisen ja arvostetun jalokiven.</p>",
+            "cut": "<p>Ovaalihionta korostaa safiirin väriä ja antaa kivelle elegantin, pitkänomaisen muodon, joka saa sen näyttämään suuremmalta kuin karaattipaino antaisi olettaa.</p>"
+        },
+        "actress": {
+            "name": "Ava Gardner",
+            "years": "1922-1990",
+            "movies": "The Killers (1946); Mogambo (1953); The Barefoot Contessa (1954)",
+            "biography": "<p>Ava Gardner oli yhdysvaltalainen näyttelijä, jota pidettiin yhtenä Hollywoodin kultakauden suurista tähdistä. Hän nousi kuuluisuuteen 1940-luvulla elokuvalla The Killers ja tunnettiin vahvasta karismastaan ja kauneudestaan.</p><p>Gardner esiintyi useissa menestyselokuvissa ja sai Oscar-ehdokkuuden roolistaan elokuvassa Mogambo. Hänen uransa huippuvuosina hän näytteli usein voimakkaita ja itsenäisiä naishahmoja.</p><p>Hänen yksityiselämänsä, erityisesti avioliitto laulaja Frank Sinatran kanssa, sai paljon julkisuutta. Myöhemmällä iällään Gardner vetäytyi julkisuudesta ja vietti aikaa Euroopassa.</p>"
+        },
+        "target": 1,
+        "model": "ava.glb",
+        "image": "02_Ava.png"
+    },
+
+    "03_Bette": {
+        "title": "Bette",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Briljanttihiottu sininen topaasi",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2019,
+            "price": 280
+        },
+        "gemstone": {
+            "stone": "<p><b>Topaasi</b> on silikaattimineraali, jota esiintyy useissa väreissä. Topaasi on kaunis, melko yleinen ja edullinen jalokivi, mutta sen pehmeys rajoittaa sen käyttöä esimerkiksi sormuksissa.</p>",
+            "color": "<p>Sininen topaasi tunnetaan kirkkaasta ja rauhallisesta väristään, ja se liitetään selkeyteen ja viestintään.</p><p>Sininen topaasi voi olla vaaleasta taivaansinisestä syvempään Swiss Blue -sävyyn. Sen viileä väri tuo jalokiveen modernia raikkautta.</p>",
+            "cut": "<p>Pyöreä hionta tuo topaasin läpinäkyvyyden ja valonheijastukset kauniisti esiin.</p>"
+        },
+        "actress": {
+            "name": "Bette Davis",
+            "years": "1908-1989",
+            "movies": "Jezebel (1938); All About Eve (1950); What Ever Happened to Baby Jane? (1962)",
+            "biography": "<p>Bette Davis oli yhdysvaltalainen näyttelijä, joka tunnettiin intensiivisistä ja monimutkaisista roolisuorituksistaan. Hän voitti kaksi Oscar-palkintoa ja oli yksi Hollywoodin merkittävimmistä naisnäyttelijöistä.</p><p>Davis oli tunnettu vahvasta tahdostaan ja halustaan valita vaativia rooleja, jotka rikkoivat aikansa naiskuvia. Hänen roolinsa elokuvassa All About Eve on yksi elokuvahistorian ikonisimmista.</p><p>Hänen uransa kesti useita vuosikymmeniä, ja hän vaikutti merkittävästi elokuvanäyttelijän työn arvostukseen.</p>"
+        },
+        "target": 2,
+        "model": "bette.glb",
+        "image": "03_Bette.png"
+    },
+
+    "04_Brigitte": {
+        "title": "Brigitte",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 40,
+                "width": 20
+            },
+            "gemstone": "Baquette-hiontainen väritön timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 280
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Väritön timantti on klassinen ja arvostettu, ja sen kirkkaus korostaa kiven puhtautta ja valon leikkiä.</p>",
+            "cut": "<p>Baquette-hionta on suorakaiteen muotoinen ja korostaa timantin selkeyttä ja geometrisyyttä, tuoden esiin elegantin ja modernin ilmeen.</p>"
+        },
+        "actress": {
+            "name": "Brigitte Bardot",
+            "years": "1934-",
+            "movies": "Et Dieu… créa la femme (1956); Le Mépris (1963); Viva Maria! (1965)",
+            "biography": "<p>Brigitte Bardot on ranskalainen näyttelijä, laulaja ja eläinoikeusaktivisti. Hän nousi kansainväliseen kuuluisuuteen 1950-luvulla ja symboloi seksuaalista vapautta ja modernia naiskuvaa.</p><p>Bardot’n läpimurto tapahtui elokuvalla Ja Jumala loi naisen, joka teki hänestä maailmanlaajuisen tähden. Hän näytteli useissa ranskalaisissa ja kansainvälisissä elokuvissa.</p><p>Hän vetäytyi elokuvista 1970-luvulla ja keskittyi eläinsuojelutyöhön, jossa hän on ollut aktiivinen vuosikymmeniä.</p>"
+        },
+        "target": 3,
+        "model": "brigitte.glb",
+        "image": "04_Brigitte.png"
+    },
+
+    "05_Elisabeth": {
+        "title": "Elisabeth",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 90,
+                "width": 60
+            },
+            "gemstone": "Vihreä radiant-hiontainen safiiri",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2022,
+            "price": 1850
+        },
+        "gemstone": {
+            "stone": "<p><b>Safiiri</b> on korundimineraali, joka tunnetaan kovuudestaan ja monipuolisista väreistään.</p>",
+            "color": "<p>Vihreät safiirit ovat harvinaisempia ja symboloivat tasapainoa ja kasvua. Vihreän safiirin sävy vaihtelee kellertävästä metsänvihreään, ja sen vivahteikas väri tekee siitä ainutlaatuisen jalokiven.</p>",
+            "cut": "<p>Radiant-hionta yhdistää smaragdihionnan muodon ja briljanttihionnan säihkeen, tuoden safiirin värin ja loiston voimakkaasti esiin.</p>"
+        },
+        "actress": {
+            "name": "Elizabeth Taylor",
+            "years": "1932-2011",
+            "movies": "Cleopatra (1963); Who's Afraid of Virginia Woolf? (1966); Cat on a Hot Tin Roof (1958)",
+            "biography": "<p>Elizabeth Taylor oli brittiläis-yhdysvaltalainen näyttelijä ja yksi Hollywoodin suurimmista tähdistä. Hän voitti kaksi Oscar-palkintoa ja tunnettiin intensiivisistä roolisuorituksistaan.</p><p>Taylor aloitti uransa lapsitähtenä ja nousi aikuisena yhdeksi aikansa tunnetuimmista näyttelijöistä. Hänen roolinsa Cleopatra-elokuvassa oli yksi historian kalleimmista tuotannoista.</p><p>Hän oli myös tunnettu yksityiselämästään ja hyväntekeväisyystyöstään, erityisesti HIV/AIDS-tietoisuuden edistämisessä.</p>"
+        },
+        "target": 4,
+        "model": "elisabeth.glb",
+        "image": "05_Elisabeth.png"
+    },
+
+    "06_Gloria": {
+        "title": "Gloria",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 76,
+                "width": 76
+            },
+            "gemstone": "Briljanttihiontainen väritön timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 1700
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Väritön timantti on klassinen ja arvostettu, ja sen kirkkaus korostaa kiven puhtautta ja valon leikkiä.</p><p>Timantti mielletään yleensä värittömäksi jalokiveksi, mutta todellisuudessa vain pienen pieni osa kaikista maailman timanteista todella ovat värittömiä.</p>",
+            "cut": "<p>Pyöreä <b>Briljantti</b> on yleisimmin käytetty hiontamuoto. Briljanttihionnassa on 57-viistettä ja se on suunniteltu maksimoimaan timantin säihke ja valon heijastukset.</p>"
+        },
+        "actress": {
+            "name": "Gloria Grahame",
+            "years": "1923-1981",
+            "movies": "The Bad and the Beautiful (1952); In a Lonely Place (1950); Oklahoma! (1955)",
+            "biography": "<p>Gloria Grahame oli yhdysvaltalainen näyttelijä, joka tunnettiin erityisesti film noir -rooleistaan. Hän voitti Oscar-palkinnon roolistaan elokuvassa The Bad and the Beautiful.</p><p>Grahame näytteli usein monimutkaisia ja haavoittuvia naishahmoja, jotka jäivät elokuvahistoriaan vahvoina tulkintoina.</p><p>Hänen uransa hiipui 1960-luvulla, mutta hänen työnsä on sittemmin saanut uutta arvostusta.</p>"
+        },
+        "target": 5,
+        "model": "gloria.glb",
+        "image": "06_Gloria.png"
+    },
+
+    "07_Greta": {
+        "title": "Greta",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Vihreä briljanttihiontainen timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 380
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Vihreä timantti saa värinsä säteilyn vaikutuksesta joko luonnossa tai yleisemmin ihmisen käsittelyssä. Vihreän sävy voi vaihdella hennosta mintusta syvään metsänvihreään.</p>",
+            "cut": "<p>Pyöreä <b>Briljantti</b> on yleisimmin käytetty hiontamuoto. Briljanttihionnassa on 57-viistettä ja se on suunniteltu maksimoimaan timantin säihke ja valon heijastukset.</p>"
+        },
+        "actress": {
+            "name": "Greta Garbo",
+            "years": "1905-1990",
+            "movies": "Anna Karenina (1935); Kamelianainen (1936); Ninotchka (1939)",
+            "biography": "<p>Greta Garbo oli ruotsalainen näyttelijä ja yksi Hollywoodin mykkä- ja varhaisen äänielokuvan suurimmista tähdistä.</p><p>Garbo loi menestyksekkään uran mykkäelokuvissa. Hänen uransa kohokohta oli kuitenkin vasta 1930-luvulla äänielokuvissa, jolloin hän tuli tunnetuksi etenkin kohtalokkaiden naisten rooleista. Elokuvauransa aikana hän sai lisänimen ”Jumalainen Garbo”.</p><p>Greta Garbo vetäytyi elokuvatyöstä ja julkisuudesta 36-vuotiaana. Vuonna 1955 hänelle myönnettiin elokuvaurasta kunnia-Oscar. Vuonna 1999 American Film Institute valitsi hänet vuosisadan viidenneksi merkittävimmäksi naisnäyttelijäksi.</p>"
+        },
+        "target": 6,
+        "model": "greta.glb",
+        "image": "07_Greta.png"
+    },
+
+    "08_Harriet": {
+        "title": "Harriet",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Sydämen muotoinen pinkki timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2021,
+            "price": 380
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Pinkki timantti on erittäin harvinainen ja arvostettu, ja sen sävy vaihtelee hennosta ruususta intensiiviseen fuksiaan.</p><p>Se mikä saa aikaan vaaleanpunaisen värin luonnon timantissa ei ole täysin selvillä. Teoriat esittävät, että joko paine, seisminen shokki tai säteily voisivat olla värisävyn syntymisen takana.",
+            "cut": "<p>Sydämen muotoinen hionta korostaa timantin romanttista symboliikkaa. Se on teknisesti vaativa hionta, joka vaatii tarkkaa symmetriaa.</p>"
+        },
+        "actress": {
+            "name": "Harriet Nelson",
+            "years": "1909-1994",
+            "movies": "The Adventures of Ozzie and Harriet (1952–1966)",
+            "biography": "<p>Harriet Nelson oli yhdysvaltalainen näyttelijä ja laulaja, joka tunnettiin erityisesti televisiosarjasta The Adventures of Ozzie and Harriet.</p><p>Hän esiintyi sarjassa yhdessä perheensä kanssa, ja ohjelmasta tuli yksi amerikkalaisen television pitkäikäisimmistä perhesarjoista.</p><p>Nelson vaikutti merkittävästi varhaiseen televisiokulttuuriin Yhdysvalloissa.</p>"
+        },
+        "target": 7,
+        "model": "harriet.glb",
+        "image": "08_Harriet.png"
+    },
+
+    "09_Hedy": {
+        "title": "Hedy",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 80,
+                "width": 70
+            },
+            "gemstone": "Ovaali vaaleanpunainen morganiitti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2022,
+            "price": 1700
+        },
+        "gemstone": {
+            "stone": "<p><b>Morganiitti</b> on berylliryhmän jalokivi, joka tunnetaan pehmeistä vaaleanpunaisista ja persikan sävyistään.</p>",
+            "color": "<p>Morganiitin väri vaihtelee hennosta roosasta lämpimään persikkaan, ja sen sävy on usein hienostuneen pastellinen.</p><p>Morganiitille sen tunnusomaisen värin antaa kivessä epäpuhtautena oleva mangaani. Berylli on kemiallisesti sama kivi kuin smaragdi (jolle vihreän värin antaa kromi), mutta vain punertavia beryllejä kutsutaan morganiiteiksi.</p>",
+            "cut": "<p>Ovaalihionta korostaa morganiitin pehmeää väriä ja antaa kivelle elegantin, pitkänomaisen muodon.</p>"
+        },
+        "actress": {
+            "name": "Hedy Lamarr",
+            "years": "1914-2000",
+            "movies": "Algiers (1938); Samson and Delilah (1949); Ecstasy (1933)",
+            "biography": "<p>Hedy Lamarr oli itävaltalais-yhdysvaltalainen näyttelijä ja keksijä. Elokuvamaailmassa hänen lempinimenään on ollut The Most Beautiful Woman in Films (Elokuvien kaunein nainen).</p><p>Lamarr aloitti uransa saksankielisissä elokuvissa 1930-luvun alussa, joissa hän esiintyi omalla nimellään Hedy Kiesler. Hänet löysi itävaltalainen ohjaaja Max Reinhardt. Tšekkoslovakialainen elokuva Hurmio sisälsi kohtauksia, joissa hän ui ja rakasteli alasti, ja Yhdysvalloissa tämä Ecstasy-nimellä esitetty elokuva kiellettiin, mikä ei kuitenkaan estänyt sen nousua kuuluisaksi.</p><p>Paettuaan avioliittoaan 1937 Pariisin kautta Lontooseen hän tapasi siellä Louis B. Mayerin. Hänen ensimmäinen Hollywood-elokuvansa valmistui vuonna 1938. Hänestä tuli eksoottisen ulkonäkönsä vuoksi suosittu näyttelijätär 1940-luvulla, ja hänen suurimmaksi menestyksekseen nousi elokuva Simson ja Delila (Samson and Delilah, 1949).</p><p>Toisen maailmansodan syttyessä Lamarr keskittyi teknisiin ja tieteellisiin keksintöihin auttaakseen sotatoimia. Lamarr kehitti taajuuksia vaihtavan radioteknologian torpedoiden ohjaamiseen jotta nämä eivät olisi alttiita häirinnälle. Eri taajuuksien käytölle myönnettiin patentti, mutta keksintöä ei otettu käyttöön ja patentti ehti vanhentua. Hajaspektritekniikka on perusta nykyisille mobiiliradiotekniikoille kuten CDMA:lle ja WLANille.</p>"
+        },
+        "target": 8,
+        "model": "hedy.glb",
+        "image": "09_Hedy.png"
+    },
+
+    "10_Judy": {
+        "title": "Judy",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 10,
+                "width": 10
+            },
+            "gemstone": "Princess-hiontainen timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2022,
+            "price": 80
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Väritön timantti on klassinen ja arvostettu, ja sen kirkkaus korostaa kiven puhtautta ja valon leikkiä.</p><p>Timantti mielletään yleensä värittömäksi jalokiveksi, mutta todellisuudessa vain pienen pieni osa kaikista maailman timanteista todella ovat värittömiä.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+        "actress": {
+            "name": "Judy Garland",
+            "years": "1922-1969",
+            "movies": "The Wizard of Oz (1939); A Star Is Born (1954); Meet Me in St. Louis (1944)",
+            "biography": "<p>Judy Garland oli yhdysvaltalainen näyttelijä ja laulaja, joka nousi kuuluisuuteen lapsitähtenä. Hänen roolinsa elokuvassa Ihmemaa Oz teki hänestä ikonin.</p><p>Garland tunnettiin voimakkaasta laulustaan ja tunnepitoisista esiintymisistään.</p><p>Hänen elämäänsä varjostivat henkilökohtaiset ongelmat, mutta hänen taiteellinen perintönsä on merkittävä.</p>"
+        },
+        "target": 9,
+        "model": "judy.glb",
+        "image": "10_Judy.png"
+    },
+
+    "11_Lana": {
+        "title": "Lana",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Sydämen muotoinen turkoosi timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2023,
+            "price": 380
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Turkoosi timantti on harvinainen värimuunnos, jonka sävy vaihtelee sinivihreästä kirkkaaseen meriturkoosiin.</p>",
+            "cut": "<p>Sydämen muotoinen hionta korostaa timantin romanttista symboliikkaa. Se on teknisesti vaativa hionta, joka vaatii tarkkaa symmetriaa.</p>"
+        },
+        "actress": {
+            "name": "Lana Turner",
+            "years": "1921-1995",
+            "movies": "The Postman Always Rings Twice (1946); Peyton Place (1957); Imitation of Life (1959)",
+            "biography": "<p>Lana Turner oli yhdysvaltalainen näyttelijä ja yksi Hollywoodin kultakauden glamour-tähdistä. Hän nousi kuuluisuuteen 1930-luvulla ja tunnettiin sekä kauneudestaan että dramaattisista rooleistaan.</p><p>Turner esiintyi useissa menestyselokuvissa ja sai Oscar-ehdokkuuden elokuvasta Peyton Place. Hänen roolinsa film noir -elokuvassa The Postman Always Rings Twice on erityisen tunnettu.</p><p>Hänen yksityiselämänsä oli usein julkisuuden kohteena, mutta hänen uransa kesti useita vuosikymmeniä.</p>"
+        },
+        "target": 10,
+        "model": "lana.glb",
+        "image": "11_Lana.png"
+    },
+
+    "12_Lucille": {
+        "title": "Lucille",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Sininen briljanttihiontainen timantti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2023,
+            "price": 380
+        },
+        "gemstone": {
+            "stone": "<p><b>Timantti</b> syntyy maan alla kovassa paineessa ja kuumuudessa, ja se on luonnossa esiintyvistä aineista kovin. Timantti ei sisällä muita alkuaineita kuin hiiltä.</p><p>Sana timantti johtuu kreikan kielen sanasta <i>adamas</i>, joka tarkoittaa voittamatonta ja viittaa timantin suureen kovuuteen.</p><p>Timantilla on suuri symbolinen merkitys; sen ajatellaan kertovan ikuisesta tai kaiken kestävästä rakkaudesta.</p>",
+            "color": "<p>Sininen timantti saa värinsä boorista, ja sen sävy vaihtelee vaaleasta jääsinisestä syvään kuninkaalliseen siniseen.</p>",
+            "cut": "<p>Pyöreä <b>Briljantti</b> on yleisimmin käytetty hiontamuoto. Briljanttihionnassa on 57-viistettä ja se on suunniteltu maksimoimaan timantin säihke ja valon heijastukset.</p>"
+        },
+        "actress": {
+            "name": "Lucille Ball",
+            "years": "1911-1989",
+            "movies": "I Love Lucy (1951–1957); The Lucy Show (1962–1968); Yours, Mine and Ours (1968)",
+            "biography": "<p>Lucille Ball oli yhdysvaltalainen näyttelijä, koomikko ja tuottaja, joka tunnetaan erityisesti televisiosarjasta I Love Lucy.</p><p>Hän oli yksi television historian vaikutusvaltaisimmista naisista ja ensimmäinen nainen, joka johti suurta televisiotuotantoyhtiötä.</p><p>Ballin komediallinen tyyli ja ajoitus tekivät hänestä ikonisen hahmon viihdeteollisuudessa.</p>"
+        },
+        "target": 11,
+        "model": "lucille.glb",
+        "image": "12_Lucille.png"
+    },
+
+    "13_Marilyn": {
+        "title": "Marilyn",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Princess-hiontainen väritön moissaniitti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 340
+        },
+        "gemstone": {
+            "stone": "<p><b>Moissaniitti</b> on luonnossa erittäin harvinainen mineraali, joka tunnetaan voimakkaasta valonvälkkeestään ja timanttia muistuttavasta ulkonäöstään. Se on erittäin kova ja kestävä jalokivi.</p><p>Korukäytössä olevat moissaniitit ovat aina laboratoriossa valmistettuja, sillä maapallolla moissaniitteja on tavattu vain hyvin pieninä määrinä meteoriiteissa.</p>",
+            "color": "<p>Moissaniitti on yleensä lähes väritön, mutta voi heijastaa sateenkaaren värejä voimakkaan dispersionsa (tuli) ansiosta.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+
+        "actress": {
+            "name": "Marilyn Monroe",
+            "years": "1926-1962",
+            "movies": "Gentlemen Prefer Blondes (1953); Some Like It Hot (1959); The Seven Year Itch (1955)",
+            "biography": "<p>Marilyn Monroe oli yhdysvaltalainen näyttelijä, laulaja ja malli, josta tuli yksi 1900-luvun tunnetuimmista seksisymboleista.</p><p>Hän näytteli useissa menestyskomedioissa ja nousi yhdeksi Hollywoodin suurimmista tähdistä 1950-luvulla. Hänen roolinsa elokuvassa Piukat paikat on erityisen arvostettu.</p><p>Monroen elämä oli täynnä ristiriitoja ja henkilökohtaisia vaikeuksia, mutta hänen vaikutuksensa populaarikulttuuriin on edelleen merkittävä.</p>"
+        },
+        "target": 12,
+        "model": "marilyn.glb",
+        "image": "13_Marilyn.png"
+    },
+
+    "14_Marlene": {
+        "title": "Marlene",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Briljanttihiontainen vaaleanpunainen morganiitti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2022,
+            "price": 280
+        },
+        "gemstone": {
+            "stone": "<p><b>Morganiitti</b> on berylliryhmän jalokivi, joka tunnetaan pehmeistä vaaleanpunaisista ja persikan sävyistään.</p>",
+            "color": "<p>Morganiitin väri vaihtelee hennosta roosasta lämpimään persikkaan, ja sen sävy on usein hienostuneen pastellinen.</p><p>Morganiitille sen tunnusomaisen värin antaa kivessä epäpuhtautena oleva mangaani. Berylli on kemiallisesti sama kivi kuin smaragdi (jolle vihreän värin antaa kromi), mutta vain punertavia beryllejä kutsutaan morganiiteiksi.</p>",
+            "cut": "<p>Pyöreä 57-viisteinen <b>briljantti</b> on yleisimmin käytetty ja tunnetuin jalokivien hiontamuoto.</p>"
+        },
+        "actress": {
+            "name": "Marlene Dietrich",
+            "years": "1901-1992",
+            "movies": "The Blue Angel (1930); Morocco (1930); Shanghai Express (1932)",
+            "biography": "<p>Marlene Dietrich oli saksalais-yhdysvaltalainen näyttelijä ja laulaja, joka tunnettiin androgyynistä tyylistään ja vahvasta lavapersoonastaan.</p><p>Hän nousi kansainväliseen kuuluisuuteen elokuvalla Sininen enkeli ja teki pitkän uran Hollywoodissa.</p><p>Dietrich oli myös tunnettu poliittisesta aktiivisuudestaan ja vastustuksestaan natsismia kohtaan.</p>"
+        },
+        "target": 13,
+        "model": "marlene.glb",
+        "image": "14_Marlene.png"
+    },
+
+    "15_Myrna": {
+        "title": "Myrna",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Princess-hiontainen vaaleanpunainen morganiitti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 340
+        },
+        "gemstone": {
+            "stone": "<p><b>Morganiitti</b> on berylliryhmän jalokivi, joka tunnetaan pehmeistä vaaleanpunaisista ja persikan sävyistään.</p>",
+            "color": "<p>Morganiitin väri vaihtelee hennosta roosasta lämpimään persikkaan, ja sen sävy on usein hienostuneen pastellinen.</p><p>Morganiitille sen tunnusomaisen värin antaa kivessä epäpuhtautena oleva mangaani. Berylli on kemiallisesti sama kivi kuin smaragdi (jolle vihreän värin antaa kromi), mutta vain punertavia beryllejä kutsutaan morganiiteiksi.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+        "actress": {
+            "name": "Myrna Loy",
+            "years": "1905-1993",
+            "movies": "The Thin Man (1934); Libeled Lady (1936); The Best Years of Our Lives (1946)",
+            "biography": "<p>Myrna Loy oli yhdysvaltalainen näyttelijä, joka tunnettiin erityisesti komedioistaan ja elegantista tyylistään.</p><p>Hän näytteli usein vastaparina William Powellille Thin Man -elokuvissa, jotka olivat erittäin suosittuja.</p><p>Loy sai myöhemmin kunnia-Oscarin elämäntyöstään elokuvan parissa.</p>"
+        },
+        "target": 14,
+        "model": "myrna.glb",
+        "image": "15_Myrna.png"
+    },
+
+    "16_Patricia": {
+        "title": "Patricia",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 10,
+                "width": 10
+            },
+            "gemstone": "Princess-hiontainen turkoosi Paraiban turmaliini",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2022,
+            "price": 80
+        },
+        "gemstone": {
+            "stone": "<p><b>Paraiban turmaliini</b> on yksi harvinaisimmista turmaliinityypeistä, tunnettu intensiivisestä neon‑sinivihreästä väristään. Se on erittäin haluttu keräilijöiden keskuudessa.</p>",
+            "color": "<p>Paraiban turmaliinin väri vaihtelee kirkkaasta turkoosista hehkuvaan sinivihreään, ja sen loiste on ainutlaatuinen.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+        "actress": {
+            "name": "Patricia Morison",
+            "years": "1915-2018",
+            "movies": "Kiss Me, Kate (1948); Without Love (1945); Song of the Thin Man (1947)",
+            "biography": "<p>Patricia Morison oli yhdysvaltalainen näyttelijä ja laulaja, joka tunnettiin erityisesti Broadway-rooleistaan.</p><p>Hän saavutti suurta menestystä musikaalissa Kiss Me, Kate, josta tuli yksi hänen tunnetuimmista rooleistaan.</p><p>Morisonin ura ulottui elokuvista teatteriin ja televisioon useiden vuosikymmenten ajan.</p>"
+        },
+        "target": 15,
+        "model": "patricia.glb",
+        "image": "16_Patricia.png"
+    },
+
+    "17_Shelley": {
+        "title": "Shelley",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Harmaa pyöreä spinelli",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 340
+        },
+        "gemstone": {
+            "stone": "<p><b>Spinelli</b> on jalokivi, jota esiintyy useissa väreissä. Spinelli-nimi tulee latinan kielen sanasta spina (oka, piikki), joka viittaa kiteen muotoon.</p>",
+            "color": "<p>Spinelliä tavataan punaisena, vaaleanpunaisena, violettina, sinisenä, ruskeana, värittömänä, vihreänä, keltaisena ja mustana/harmaana. Harmaa spinelli voi olla viileän hopeinen tai tummempi grafiitinharmaa.</p>",
+            "cut": "<p>Tämän kiven esikuva on hiottu käsityönä ja siinä on vähemmän viisteitä, kuin perinteisessä briljanttihionnassa. Hionta antaa harmaalle spinellille pehmeän ja satumaisen hehkun.</p>"
+        },
+        "actress": {
+            "name": "Shelley Winters",
+            "years": "1920-2006",
+            "movies": "The Diary of Anne Frank (1959); A Patch of Blue (1965); Lolita (1962)",
+            "biography": "<p>Shelley Winters oli yhdysvaltalainen näyttelijä, joka voitti kaksi Oscar-palkintoa sivurooleistaan.</p><p>Hän tunnettiin monipuolisista rooleistaan sekä draamoissa että komedioissa ja oli aktiivinen näyttelijä vuosikymmenten ajan.</p><p>Winters oli myös tunnettu suorapuheisuudestaan ja aktiivisuudestaan elokuva-alan ulkopuolella.</p>"
+        },
+        "target": 16,
+        "model": "shelley.glb",
+        "image": "17_Shelley.png"
+    },
+
+    "18_Shirley": {
+        "title": "Shirley",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 30,
+                "width": 30
+            },
+            "gemstone": "Princess-hiontainen london blue topaasi",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 380
+        },
+        "gemstone": {
+            "stone": "<p><b>Topaasi</b> on silikaattimineraali, jota esiintyy useissa väreissä.</p>",
+            "color": "<p>London Blue -topaasissa on syvän sininen, hieman vihertävään taittava mustemainen värisävy. Se on tummempi kuin tavallinen sininen topaasi, mutta vaaleampi kuin sininen safiiri.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+
+        "actress": {
+            "name": "Shirley Temple",
+            "years": "1928-2014",
+            "movies": "Bright Eyes (1934); Curly Top (1935); Heidi (1937)",
+            "biography": "<p>Shirley Temple oli yhdysvaltalainen lapsitähti, joka nousi suureen suosioon 1930-luvulla.</p><p>Hän oli yksi aikansa suosituimmista näyttelijöistä ja tunnettiin iloisista rooleistaan sekä laulusta ja tanssista.</p><p>Aikuisena Temple siirtyi diplomatian pariin ja toimi Yhdysvaltain suurlähettiläänä.</p>"
+        },
+        "target": 17,
+        "model": "shirley.glb",
+        "image": "18_Shirley.png"
+    },
+
+    "19_Sophia": {
+        "title": "Sophia",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Vihreä princess-hiontainen safiiri",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2020,
+            "price": 340
+        },
+        "gemstone": {
+            "stone": "<p><b>Safiiri</b> on korundimineraali, joka tunnetaan kovuudestaan ja monipuolisista väreistään.</p>",
+            "color": "<p>Vihreät safiirit ovat harvinaisempia ja symboloivat tasapainoa ja kasvua. Vihreän safiirin sävy vaihtelee kellertävästä metsänvihreään, ja sen vivahteikas väri tekee siitä ainutlaatuisen jalokiven.</p>",
+            "cut": "<p>Princess-hionta on neliömäinen ja moderni, ja se tarjoaa voimakkaan säihkeen. Ylhäältäpäin katsottuna princess-hiotussa jalokivessä voi erottaa nelisakaraisen tähden. Sivusta katsottuna princess-hionta näyttää käännetyltä pyramidilta.</p>"
+        },
+        "actress": {
+            "name": "Sophia Loren",
+            "years": "1934-",
+            "movies": "Two Women (1960); Marriage Italian Style (1964); Yesterday, Today and Tomorrow (1963)",
+            "biography": "<p>Sophia Loren on italialainen näyttelijä, joka on yksi Euroopan tunnetuimmista elokuvatähdistä.</p><p>Hän voitti Oscar-palkinnon roolistaan elokuvassa Kaksi naista ja teki pitkän kansainvälisen uran.</p><p>Loren tunnetaan karismastaan ja kyvystään yhdistää dramaattiset ja komedialliset roolit.</p>"
+        },
+        "target": 18,
+        "model": "sophia.glb",
+        "image": "19_Sophia.png"
+    },
+
+    "20_Vivien": {
+        "title": "Vivien",
+        "technical": {
+            "medium": "Akryyli kankaalle",
+            "size": {
+                "height": 20,
+                "width": 20
+            },
+            "gemstone": "Pyöreä violetti ametisti",
+            "artist": "Anna-Kaisa Juhola",
+            "year": 2021,
+            "price": 280
+        },
+        "gemstone": {
+            "stone": "<p><b>Ametisti</b> on kvartsin violetti jalokivilaatu, joka tunnetaan rauhoittavista ja henkisistä merkityksistään. Se on yksi maailman suosituimmista värillisistä jalokivistä.</p>",
+            "color": "<p>Ametistin violetti väri johtuu kiven rautaepäpuhtauksista. Väri vaihtelee hennosta laventelista syvään purppuraan. Kun ametistia kuumennetaan, sen väri muuttuu keltaiseksi.</p>",
+            "cut": "<p>Pyöreä <b>Briljantti</b> on yleisimmin käytetty hiontamuoto. Briljanttihionnassa on 57-viistettä ja se on suunniteltu maksimoimaan timantin säihke ja valon heijastukset.</p>"
+        },
+        "actress": {
+            "name": "Vivien Leigh",
+            "years": "1913-1967",
+            "movies": "Gone with the Wind (1939); A Streetcar Named Desire (1951); Waterloo Bridge (1940)",
+            "biography": "<p>Vivien Leigh oli brittiläinen näyttelijä, joka voitti kaksi Oscar-palkintoa uransa aikana.</p><p>Hänet tunnetaan erityisesti Scarlett O’Haran roolista elokuvassa Tuulen viemää sekä Blanche DuBois’n roolista elokuvassa Viettelyksen vaunu.</p><p>Leighin elämä sisälsi myös terveysongelmia, mutta hänen näyttelijäntyönsä on jäänyt elokuvahistoriaan klassikkona.</p>"
+        },
+        "target": 19,
+        "model": "vivien.glb",
+        "image": "20_Vivien.png"
+    }
+}

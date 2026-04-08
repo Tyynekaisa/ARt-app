@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaisa Juhola">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Artwall</title>
+</head>
+
+<body class="arbody">
+    <header>ART LOGO</header>
+    <div class="modelMenu" id="modelMenu">
+        <ul id="modelList"></ul>
+        <button class="menuBtn" id="menuBtn">        
+            <img src="svg/arrow-down-svgrepo-com.svg" class="menuArrow" id=""menuArrow>
+            <p>Teoksen valinta</p>
+        </button>
+    </div>
+
+    
+    <div class="bottomNavigation" id="bottomNavigation">
+        <div class="navButton" id="galleryButton">
+            <a href="index.html">
+                <img src="svg/art-gallery.svg" class="icon gallery">
+            </a>
+        </div>
+        <div class="navButton active" id="homeButton">
+            <img src="svg/house-svgrepo-com.svg" class="icon home active">
+        </div>
+        <div class="navButton" id="cameraButton">
+            <img src="svg/camera-retro-svgrepo-com.svg" class="icon camera">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="module" src="js/artwall.js"></script>
+</body>
+</html>

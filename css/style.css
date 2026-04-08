@@ -1,0 +1,328 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Great+Vibes";
+
+* {
+    box-sizing: border-box;
+}
+
+body  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: lighter;
+    color: #FFF;
+    margin: 0;
+    font-size: 150px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 70px;
+}
+
+h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 27px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+hr {
+ border: 1px solid white;
+ margin: 20px 0;
+
+}
+
+table, th, td {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    border: none;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+td {
+    padding-left: 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 63px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.ar-container {
+    height: auto;
+    width: 1000px;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.artName {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+
+.content-wrapper{
+    width: 1000px;  /* Säädä kokoa */
+    min-height: 550px;
+    /* display: block; */
+    position: relative;
+    margin: 10px 0 30px;
+    z-index: 10;
+}
+
+.actress, .technical, .gemstone {
+    display: none;
+    width: 800px;
+    min-height: 550px;
+    background-color: antiquewhite;
+    align-self: center;
+    padding: 10px 30px;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    margin: 0 auto;
+    opacity: 0;
+    /* transform: scale(0.8); */
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+.technical hr {
+    margin-bottom: 40px;
+}
+
+.gemstone h2 {
+    font-size: 50px;
+}
+
+.content-close {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+.ar-buttons {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.arArtBtn, .arGemBtn, .arActressBtn{
+    background-color: #b19258;
+    height: 100px;
+    width: 100px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+}
+
+.arIcon {
+    display: block;
+    margin: 18px auto;
+    height: 60%;
+    width: auto;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.bottomNavigation {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.navButton {
+    height: 60px;
+    width: 80px;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    border-top: solid 3px white;
+}
+
+.navButton.active {
+    border-top: solid 3px #b19258;
+}
+
+.icon {
+    height: 30px;
+    width: auto;
+    transition: 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.icon:hover, .icon:active {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+.active {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(9%) saturate(2035%) hue-rotate(1deg) brightness(87%) contrast(81%);
+    opacity: 1;
+}
+
+.active:hover, .active:active {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+
+/* Painting alasivu */
+
+.arbody {
+    background-image: url("../assets/images/background.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.modelMenu {
+    width: 100%;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px 0;
+    transition: 0.3s ease;
+}
+
+.modelMenu.open {
+    top: 60px;
+    transition: 0.3s ease;
+}
+
+.menuBtn {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.menuBtn p {
+    font-size: 15px;
+    margin: 0; 
+}
+
+.menuArrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.modelMenu.open .menuArrow {
+    transform: rotate(180deg);
+}
+
+
+
+.slider.open {
+    top: 60px;
+}
+
+
+#modelList {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+}
+
+#modelList li {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+#modelList li img.menu-image {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#modelList li img.menu-image:hover {
+    transform: scale(1.05);
+}
+
+button#ARButton {
+    bottom: 100px !important;
+    left: calc(50% - 60px) !important;
+    background-color: #b19258 !important;
+    opacity: 1 !important;
+    width: 120px !important;
+    font-size: 20px !important;
+    transition: 0.3s ease;
+}
+
+button#ARButton:hover {
+    transform: scale(1.1);
+}
+
+
