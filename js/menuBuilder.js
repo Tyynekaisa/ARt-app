@@ -13,8 +13,8 @@ export function buildModelMenu() {
 
         const li = document.createElement('li');
 
-        const modelPath = `./assets/models/paintings/${item.model}`;
-        const imagePath = `./assets/images/targetImages/${item.image}`;
+        const modelPath = `/assets/models/paintings/${item.model}`;
+        const imagePath = `/assets/images/targetImages/${item.image}`;
 
         li.dataset.model = item.model;
 
