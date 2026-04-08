@@ -12,7 +12,7 @@ startAR()
 
 async function startAR() {
 
-    const gemstones = await fetch("../data/gemstones.json").then(res => res.json())
+    const gemstones = await fetch("https://tyynekaisa.github.io/ARt-app/data/gemstones.json").then(res => res.json())
 
     const mindARThreeJs = new window.MINDAR.IMAGE.MindARThree({
         container: document.body,
