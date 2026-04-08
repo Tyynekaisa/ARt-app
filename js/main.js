@@ -3,8 +3,8 @@
 // Author: Kaisa Juhola
 // Gemstones
 
-import { CSS3DObject } from '../libs/three.js-r132/examples/jsm/renderers/CSS3DRenderer.js'
-import { loadGLTF } from '../libs/loader.js'
+import { CSS3DObject } from 'https://tyynekaisa.github.io/ARt-app/libs/three.js-r132/examples/jsm/renderers/CSS3DRenderer.js'
+import { loadGLTF } from 'https://tyynekaisa.github.io/ARt-app/libs/loader.js'
 
 const THREE = window.MINDAR.IMAGE.THREE;
 
@@ -16,7 +16,7 @@ async function startAR() {
 
     const mindARThreeJs = new window.MINDAR.IMAGE.MindARThree({
         container: document.body,
-        imageTargetSrc: "../assets/targets/gemstone_targets.mind",
+        imageTargetSrc: "https://tyynekaisa.github.io/ARt-app/assets/targets/gemstone_targets.mind",
         maxTrack: 3
     })
 
