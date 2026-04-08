@@ -29,7 +29,7 @@ async function startAR() {
 
     // Taustatekstuuri 3D-mallille
     const textureLoader = new THREE.TextureLoader()
-    const envMap = textureLoader.load('../assets/textures/photostudio.jpg')
+    const envMap = textureLoader.load('https://tyynekaisa.github.io/ARt-app/assets/textures/photostudio.jpg')
     envMap.mapping = THREE.EquirectangularReflectionMapping
     scene.environment = envMap;
     scene.backgroundBlurriness = 0.5; 
@@ -40,7 +40,7 @@ async function startAR() {
         const item = gemstones[key]
 
         // 3D-mallit
-        const model = await loadGLTF(`../assets/models/gemstones/${item.model}`)
+        const model = await loadGLTF(`https://tyynekaisa.github.io/ARt-app/assets/models/gemstones/${item.model}`)
 
         model.scene.traverse((node) => {
             if (node.isMesh) {
