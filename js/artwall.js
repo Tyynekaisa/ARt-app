@@ -55,7 +55,7 @@ function init() {
     container.appendChild(renderer.domElement)
 
     // Pointer-rengas
-    const ringGeometry = new THREE.RingGeometry(0.2, 0.5, 32)
+    const ringGeometry = new THREE.RingGeometry(0.2, 0.3, 32)
     const ringMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff })
     pointer = new THREE.Mesh(ringGeometry, ringMaterial)
     pointer.matrixAutoUpdate = false
@@ -140,60 +140,60 @@ function init() {
         })
     }
 
+    function render(time, frame) {
+        if (frame) {
+            if (!hitTestSourceAvailable) {
+                initHitSource()
+            }
+            if (hitTestSourceAvailable) {
+                const hitTestResults = frame.getHitTestResults(hitTestSource)
+                if (hitTestResults.length > 0) {
+                    const hit = hitTestResults[0]
+                    const pose = hit.getPose(localSpace)
+                    pointer.matrix.fromArray(pose.transform.matrix)
+                    pointer.visible = true
+                } else {
+                    pointer.visible = false
+                }
+            }
+        }
+        renderer.render(scene, camera)
+    }
+
     // function render(time, frame) {
     //     if (frame) {
     //         if (!hitTestSourceAvailable) {
-    //             initHitSource()
+    //             initHitSource();
     //         }
+            
     //         if (hitTestSourceAvailable) {
-    //             const hitTestResults = frame.getHitTestResults(hitTestSource)
+    //             const hitTestResults = frame.getHitTestResults(hitTestSource);
+                
     //             if (hitTestResults.length > 0) {
-    //                 const hit = hitTestResults[0]
-    //                 const pose = hit.getPose(localSpace)
-    //                 pointer.matrix.fromArray(pose.transform.matrix)
-    //                 pointer.visible = true
+    //                 const hit = hitTestResults[0];
+    //                 const pose = hit.getPose(localSpace);
+
+    //                 // Luodaan apumatriisi ja vektori pinnan suunnan tarkistamiseen
+    //                 const matrix = new THREE.Matrix4().fromArray(pose.transform.matrix);
+    //                 const normal = new THREE.Vector3(0, 0, 1).applyMatrix4(matrix).normalize();
+
+    //                 // Tarkistetaan onko kyseessä pystypinta (seinä)
+    //                 // Jos Y-akselin suuntainen arvo on lähellä nollaa, pinta on pystyssä.
+    //                 // Kynnysarvo 0.2 sallii pienet vinoudet, mutta hylkää lattiat (Y ~ 1).
+    //                 if (Math.abs(normal.y) < 0.2) {
+    //                     pointer.matrix.fromArray(pose.transform.matrix);
+    //                     pointer.visible = true;
+    //                 } else {
+    //                     // Jos pinta on vaakasuora (lattia/katto), piilotetaan pointer
+    //                     pointer.visible = false;
+    //                 }
     //             } else {
-    //                 pointer.visible = false
+    //                 pointer.visible = false;
     //             }
     //         }
     //     }
-    //     renderer.render(scene, camera)
+    //     renderer.render(scene, camera);
     // }
-
-    function render(time, frame) {
-    if (frame) {
-        if (!hitTestSourceAvailable) {
-            initHitSource();
-        }
-        
-        if (hitTestSourceAvailable) {
-            const hitTestResults = frame.getHitTestResults(hitTestSource);
-            
-            if (hitTestResults.length > 0) {
-                const hit = hitTestResults[0];
-                const pose = hit.getPose(localSpace);
-
-                // Luodaan apumatriisi ja vektori pinnan suunnan tarkistamiseen
-                const matrix = new THREE.Matrix4().fromArray(pose.transform.matrix);
-                const normal = new THREE.Vector3(0, 0, 1).applyMatrix4(matrix).normalize();
-
-                // Tarkistetaan onko kyseessä pystypinta (seinä)
-                // Jos Y-akselin suuntainen arvo on lähellä nollaa, pinta on pystyssä.
-                // Kynnysarvo 0.2 sallii pienet vinoudet, mutta hylkää lattiat (Y ~ 1).
-                if (Math.abs(normal.y) < 0.2) {
-                    pointer.matrix.fromArray(pose.transform.matrix);
-                    pointer.visible = true;
-                } else {
-                    // Jos pinta on vaakasuora (lattia/katto), piilotetaan pointer
-                    pointer.visible = false;
-                }
-            } else {
-                pointer.visible = false;
-            }
-        }
-    }
-    renderer.render(scene, camera);
-}
 
     const arButton = ARButton.createButton(renderer, {
         requiredFeatures: ['hit-test']

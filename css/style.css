@@ -278,8 +278,6 @@ header {
     transform: rotate(180deg);
 }
 
-
-
 .slider.open {
     top: 60px;
 }
@@ -300,6 +298,9 @@ header {
 #modelList li {
     flex: 0 0 auto;
     scroll-snap-align: start;
+    position: relative;
+    display: block;
+    text-align: center;
 }
 
 #modelList li img.menu-image {
@@ -313,8 +314,29 @@ header {
     transform: scale(1.05);
 }
 
-.selected {
-    border: 2px solid #b19258;
+/* Checkmark-ikonin tyylit */
+.checkmark-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px; /* Säädä kokoa */
+    height: 25px;
+    display: none;
+    pointer-events: none; /* Klikkaukset menevät läpi li-elementille */
+    filter: brightness(0) invert(1) drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
+}
+
+/* Näytetään ikoni vain, kun li-elementillä on .selected-luokka */
+
+#modelList li.selected img.menu-image {
+    transform: scale(1.05);
+    opacity: 0.6;
+
+}
+#modelList li.selected .checkmark-icon {
+    display: block;
+    transform: translateX(-50%);
 }
 
 button#ARButton {
