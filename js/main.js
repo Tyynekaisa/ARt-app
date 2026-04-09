@@ -2,9 +2,11 @@
 
 import { CSS3DObject } from 'https://tyynekaisa.github.io/ARt-app/libs/three.js-r132/examples/jsm/renderers/CSS3DRenderer.js'
 import { loadGLTF } from 'https://tyynekaisa.github.io/ARt-app/libs/loader.js'
-import { loadModelData } from './dataLoader.js'
+import { loadModelData } from 'https://tyynekaisa.github.io/ARt-app/js/dataLoader.js'
 
-const THREE = window.MINDAR.IMAGE.THREE;
+const THREE = window.MINDAR.IMAGE.THREE
+
+startAR()
 
 async function startAR() {
   
@@ -18,9 +20,10 @@ async function startAR() {
   })
   const { renderer, cssRenderer, cssScene, scene, camera } = mindARThreeJs
   
-  // const anchor = mindARThreeJs.addCSSAnchor(0)
-  // anchor.group.scale.set(0.3, 0.3, 0.3)
-  // anchor.group.add(container)
+  const container = document.querySelector('#ar-container')
+  const anchor = mindARThreeJs.addCSSAnchor(0)
+  anchor.group.scale.set(0.3, 0.3, 0.3)
+  anchor.group.add(container)
   
   const textureLoader = new THREE.TextureLoader()
   const envMap = textureLoader.load('https://tyynekaisa.github.io/ARt-app/assets/textures/photostudio.jpg')
@@ -68,8 +71,8 @@ async function startAR() {
     light3.position.set(0, -2, 2)
     anchorWebGL.group.add(light3)
 
-    const container = document.querySelector('#ar-container')
-    const element = container.cloneNode(true)
+    const arcontainer = document.querySelector('#ar-container')
+    const element = arcontainer.cloneNode(true)
     element.id = ''
     element.classList.add('ar-content-hidden')
     document.body.appendChild(element)
@@ -197,5 +200,3 @@ async function startAR() {
     cssRenderer.render(cssScene, camera)
   }
 }
-
-startAR()
