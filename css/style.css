@@ -73,6 +73,13 @@ header {
     align-items: center;
     justify-content: space-evenly;
     z-index: 100003;
+    border-bottom: 3px solid #b19258;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+
 }
 
 .ar-container {
