@@ -1,6 +1,6 @@
 // menuBuilder.js
 import { loadModelData } from 'https://tyynekaisa.github.io/ARt-app/js/dataLoader.js'
-import { selectModel } from 'https://tyynekaisa.github.io/ARt-app/js/selectModel.js'
+import { selectModel } from 'https://tyynekaisa.github.io/ARt-app/js/artwall.js'
 
 export function buildModelMenu() {
   const list = document.getElementById('modelList')

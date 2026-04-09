@@ -2,6 +2,7 @@
 
 import { ARButton } from 'https://unpkg.com/three@0.126.0/examples/jsm/webxr/ARButton.js'
 import { buildModelMenu } from 'https://tyynekaisa.github.io/ARt-app/js/menuBuilder.js'
+import { GLTFLoader } from 'https://unpkg.com/three@0.126.0/examples/jsm/loaders/GLTFLoader.js'
 
 let camera, scene, renderer
 let controller
@@ -13,6 +14,17 @@ let localSpace = null
 let loadedModels = {}
 let placedModels = {}
 let selectedModelPath = null
+
+export function selectModel(path) {
+  selectedModelPath = path
+
+  if (!loadedModels[path]) {
+    const loader = new GLTFLoader()
+    loader.load(path, gltf => {
+        loadedModels[path] = gltf.scene
+    })
+  }
+}
 
 function init() {
   const container = document.createElement('div')
