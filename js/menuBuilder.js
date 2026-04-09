@@ -1,6 +1,6 @@
 // menuBuilder.js
-import { loadModelData } from 'https://tyynekaisa.github.io/ARt-app/js/dataLoader.js'
-import { selectModel } from 'https://tyynekaisa.github.io/ARt-app/js/artwall.js'
+import { loadModelData } from './dataLoader.js'
+import { selectModel } from './selectModel.js'
 
 export function buildModelMenu() {
   const list = document.getElementById('modelList')
@@ -18,16 +18,16 @@ export function buildModelMenu() {
       li.dataset.model = item.model
 
       const img = document.createElement('img')
-      img.src = imagePath;
+      img.src = imagePath
       img.classList.add('menu-image')
 
-      const checkmarkImg = document.createElement('img');
-      checkmarkImg.src = 'https://tyynekaisa.github.io/ARt-app/svg/checkmark.svg';
-      checkmarkImg.classList.add('checkmark-icon');
+      const checkmarkImg = document.createElement('img')
+      checkmarkImg.src = 'https://tyynekaisa.github.io/ARt-app/svg/checkmark.svg'
+      checkmarkImg.classList.add('checkmark-icon')
 
       list.appendChild(li)
       li.appendChild(img)
-      li.appendChild(checkmarkImg);
+      li.appendChild(checkmarkImg)
 
       li.addEventListener("click", () => {
           const allItems = list.querySelectorAll('li')

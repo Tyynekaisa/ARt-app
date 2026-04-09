@@ -1,26 +1,24 @@
 // dataLoader.js
 
-let modelData = null;
-let dataPromise = null;
+let modelData = null
+let dataPromise = null
 
 export function loadModelData() {
-  // Jos data on jo ladattu, palautetaan se heti
-  if (modelData) return Promise.resolve(modelData);
 
-  // Jos lataus on jo käynnissä, palautetaan sama promise
-  if (dataPromise) return dataPromise;
+  if (modelData) return Promise.resolve(modelData)
 
-  // Muuten aloitetaan lataus
+  if (dataPromise) return dataPromise
+
   dataPromise = fetch('https://tyynekaisa.github.io/ARt-app/data/gemstones.json')
     .then(res => res.json())
     .then(json => {
-      modelData = json;
-      return modelData;
+      modelData = json
+      return modelData
     })
     .catch(err => {
-      console.error("JSON-latausvirhe:", err);
-      throw err;
-    });
+      console.error("JSON-latausvirhe:", err)
+      throw err
+    })
 
-  return dataPromise;
+  return dataPromise
 }
