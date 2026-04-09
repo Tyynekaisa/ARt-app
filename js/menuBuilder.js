@@ -6,7 +6,6 @@ export function buildModelMenu() {
   const list = document.getElementById('modelList')
   
   loadModelData().then(data => {
-    console.log(data)
 
     for (const key in data) {
       const item = data[key]
@@ -23,23 +22,18 @@ export function buildModelMenu() {
       img.classList.add('menu-image')
 
       const checkmarkImg = document.createElement('img');
-      checkmarkImg.src = 'https://tyynekaisa.github.io/ARt-app/svg/checkmark.svg'; // Polku tiedostoosi
+      checkmarkImg.src = 'https://tyynekaisa.github.io/ARt-app/svg/checkmark.svg';
       checkmarkImg.classList.add('checkmark-icon');
 
       list.appendChild(li)
       li.appendChild(img)
-      li.appendChild(checkmarkImg); // Lisätään oma checkmark-tiedostosi
+      li.appendChild(checkmarkImg);
 
       li.addEventListener("click", () => {
-          // 1. Poistetaan 'selected' kaikilta muilta li-elementeiltä
           const allItems = list.querySelectorAll('li')
           allItems.forEach(el => el.classList.remove('selected'))
-
-          // 2. Lisätään 'selected' klikatulle elementille
           li.classList.add('selected')
-
           selectModel(modelPath)
-          console.log("Valittu teos:", modelPath)
       })
     }
   })

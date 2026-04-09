@@ -101,11 +101,6 @@ function init() {
     }
 
     
-
-    // Tallennetaan ladatut mallit
-
-
-    // AR SELECT EVENT
     function onSelect() {
         if (!selectedModelPath || !pointer.visible) return;
 
@@ -126,15 +121,15 @@ function init() {
         clone.position.setFromMatrixPosition(pointer.matrix);
         clone.quaternion.setFromRotationMatrix(controller.matrixWorld);
 
+        const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3);
+        light.position.set(0, 0, 0.1);   // hieman mallin edessä
+        light.target = clone;
+        clone.add(light);
+        clone.add(light.target);
+
         scene.add(clone);
         placedModels[selectedModelPath] = clone;
-
-        console.log(placedModels)
     }
-
-    const light = new THREE.HemisphereLight(0xffffff, 0x000000, 1)
-    light.position.set(1, 1, 0.25)
-    scene.add(light)
 
     renderer.setAnimationLoop(render)
 
@@ -152,13 +147,17 @@ function init() {
     }
 
     function cleanupAR() {
-        console.log(placedModels)
-        console.log(loadedModels)
+        console.log("PlacedModels before cleanup:", placedModels)
+        console.log("LoadedModels before cleanup:", loadedModels)
+
         // Poista kaikki asetetut maalaukset
         for (const key in placedModels) {
             scene.remove(placedModels[key]);
         }
         placedModels.length = 0
+        loadedModels.length = 0
+        console.log("PlacedModels after cleanup:", placedModels)
+        console.log("LoadedModels after cleanup:", loadedModels)
 
         // Piilota pointer
         if (pointer) pointer.visible = false;
