@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+    height: 100vh;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
+    width: 100%;
 }
 
 .galleryBody, .artwallbody {
     overflow: hidden;
     height: 100vh;
+    
 }
 
 h1 {
@@ -86,6 +93,48 @@ header {
     height: 40px;
     width: auto;
 
+}
+
+.welcome {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.welcome p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.welcomeButton {
+    position: absolute;
+    bottom: 100px;
+    padding: 12px 6px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background: #b19258;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1;
+    outline: none;
+    cursor: pointer;
+    left: calc(50% - 60px);
+    width: 120px;
+    transition: all 0.3s ease;
+}
+
+.welcomeButton:hover {
+    transform: scale(1.1);
 }
 
 .ar-container {

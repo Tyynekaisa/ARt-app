@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaisa Juhola">
+
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+	    "three": "https://unpkg.com/three@0.132.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.132.0/examples/jsm/"
+      }
+    }
+    </script>
+    <title>ARt - Art on your wall</title>
+</head>
+
+<body class="galleryBody">
+    <header>
+        <img src="assets/images/ARt_logo.png" class="logo">
+    </header>
+
+    <div class="ar-container" id="ar-container">
+        <div class="artName" id="artName"></div>
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="content-close" id="content-close">✕</div>
+            <div class="content technical" id="content-technical"></div>
+            <div class="content gemstone" id="content-gemstone"></div>
+            <div class="content actress" id="content-actress"></div>
+        </div>
+        <div class="ar-buttons" id="ar-buttons">
+            <div class="arArtBtn" id="arArtBtn"><img src="svg/painting.svg" class="arIcon art"></div>
+            <div class="arGemBtn" id="arGemBtn"><img src="svg/diamond.svg" class="arIcon gem"></div>
+            <div class="arActressBtn" id="arActressBtn"><img src="svg/film-projector.svg" class="arIcon star"></div>
+        </div>
+    </div>
+    <div class="bottomNavigation" id="bottomNavigation">
+        <div class="navButton active" id="galleryButton">
+            <img src="svg/art-gallery.svg" class="icon gallery active">
+        </div>
+
+        <div class="navButton" id="homeButton">
+            <a href="artwall.html">
+                <img src="svg/house-svgrepo-com.svg" class="icon home">
+            </a>
+        </div>
+
+        <div class="navButton" id="guideButton">
+            <a href="tutorial.html">
+                <img src="svg/circle-info-solid.svg" class="icon info">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://tyynekaisa.github.io/ARt-app/libs/mindar/mindar-image-three.prod.js"></script>
+    <script type="module" src="js/main.js"></script>
+    
+</body>
+</html>
