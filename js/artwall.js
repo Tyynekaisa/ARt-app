@@ -122,10 +122,14 @@ function init() {
         clone.quaternion.setFromRotationMatrix(controller.matrixWorld);
 
         const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3);
-        light.position.set(0, 0, 0.1);   // hieman mallin edessä
+        light.position.set(0, 0, 1); 
         light.target = clone;
         clone.add(light);
         clone.add(light.target);
+
+        const frameLight = new THREE.PointLight(0xffffff, 1.0, 2);
+        frameLight.position.set(0, 0, 1);
+        clone.add(frameLight);
 
         scene.add(clone);
         placedModels[selectedModelPath] = clone;
