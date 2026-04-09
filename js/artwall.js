@@ -14,8 +14,8 @@ let hitTestSourceAvailable = false
 let hitTestSource = null
 let localSpace = null
 
-const loadedModels = {}
-const placedModels = {}
+let loadedModels = {}
+let placedModels = {}
 let selectedModelPath = null
 
 init()
@@ -47,7 +47,8 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({
         antialias: true,
-        alpha: true
+        alpha: true,
+        preserveDrawingBuffer: true
     })
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -74,7 +75,6 @@ function init() {
     const menuButton = document.querySelector("#menuBtn")
     const menuTextShow = document.querySelector(".menuTextShow")
     const menuTextHide = document.querySelector(".menuTextHide")
-
 
     menuButton.addEventListener("click", toggleMenu)
 
@@ -127,7 +127,7 @@ function init() {
         clone.add(light);
         clone.add(light.target);
 
-        const frameLight = new THREE.PointLight(0xffffff, 1.0, 2);
+        const frameLight = new THREE.PointLight(0xffffff, 1.0, 1);
         frameLight.position.set(0, 0, 1);
         clone.add(frameLight);
 
@@ -158,8 +158,12 @@ function init() {
         for (const key in placedModels) {
             scene.remove(placedModels[key]);
         }
-        placedModels.length = 0
-        loadedModels.length = 0
+        placedModels = {}
+
+        // for (const key in loadedModels) {
+        //     scene.remove(loadedModels[key]);
+        // }
+        // loadedModels = {}
         console.log("PlacedModels after cleanup:", placedModels)
         console.log("LoadedModels after cleanup:", loadedModels)
 
@@ -192,16 +196,14 @@ function init() {
         requiredFeatures: ['hit-test']
     })
 
-    // renderer.xr.addEventListener("sessionstart", () => {
-    //     console.log("AR-tila käynnistyi");
-    //     arButton.textContent = "Poistu AR";
-    // });
+    renderer.xr.addEventListener("sessionstart", () => {
+        console.log("AR-tila käynnistyi");
+    });
 
     renderer.xr.addEventListener("sessionend", () => {
+        console.log("AR-tila suljettiin");
         cleanupAR();
     });
 
-
     document.body.appendChild(arButton)
-
 }

@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat|Great+Vibes";
+@import "https://fonts.googleapis.com/css?family=Montserrat|Great+Vibes|Syncopate";
 
 * {
     box-sizing: border-box;
@@ -16,25 +16,27 @@ body  {
 }
 
 h1 {
-    font-family: "Great Vibes", cursive;
+    font-family: "Syncopate", sans-serif;
     font-weight: lighter;
     color: #FFF;
     margin: 0;
     font-size: 150px;
+    font-weight: 400;
     text-align: center;
 }
 
 h2 {
-    font-family: "Great Vibes", cursive;
+    font-family: "Syncopate", sans-serif;
     text-align: center;
     font-weight: lighter;
     margin: 0;
     margin-top: 10px;
-    font-size: 70px;
+    font-weight: 400;
+    font-size: 50px;
 }
 
 h3 {
-    font-family: Montserrat, sans-serif;
+    font-family: "Syncopate", sans-serif;
     font-size: 27px;
     margin: 0;
     text-align: center;
@@ -48,7 +50,7 @@ p {
 }
 
 hr {
- border: 1px solid white;
+ border: 1px solid #b19258;
  margin: 20px 0;
 
 }
@@ -112,14 +114,14 @@ header {
     display: none;
     width: 800px;
     min-height: 550px;
-    background-color: antiquewhite;
+    background-color: #fff;
     align-self: center;
     padding: 10px 30px;
-    border: 4px solid #fff;
-    border-radius: 30px;
+    border: 3px solid #b19258;
+    border-radius: 10px;
     margin: 0 auto;
     opacity: 0;
-    /* transform: scale(0.8); */
+    transform: scale(0.8);
     transition: all 0.5s ease;
     z-index: 10;
 }
@@ -129,7 +131,7 @@ header {
 }
 
 .gemstone h2 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .content-close {
@@ -154,11 +156,11 @@ header {
 }
 
 .arArtBtn, .arGemBtn, .arActressBtn{
-    background-color: #b19258;
+    background-color:antiquewhite;
     height: 100px;
     width: 100px;
-    border: 1px solid #fff;
-    border-radius: 4;
+    border: 3px solid #b19258;
+    border-radius: 10px;
     transition: 0.3s ease;
     align-items: center;
     justify-content: center;
@@ -173,7 +175,6 @@ header {
     margin: 18px auto;
     height: 60%;
     width: auto;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%) hue-rotate(279deg) brightness(105%) contrast(103%);
 }
 
 .visible {
@@ -239,7 +240,7 @@ header {
 
 /* Painting alasivu */
 
-.arbody {
+.arbody, .guidebody {
     margin: 0;
     padding: 0;
     width: 100%;
