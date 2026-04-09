@@ -1,11 +1,11 @@
 // artwall.js
-// last edited: 6.4.2026
+// last edited: 9.4.2026
 // Author: Kaisa Juhola
 // Gemstone paintings
 
 import { ARButton } from 'https://unpkg.com/three@0.126.0/examples/jsm/webxr/ARButton.js'
 import { GLTFLoader } from 'https://unpkg.com/three@0.126.0/examples/jsm/loaders/GLTFLoader.js'
-import { buildModelMenu } from 'https://tyynekaisa.github.io/ARt-app/js/menuBuilder.js';
+import { buildModelMenu } from './menuBuilder.js';
 
 let camera, scene, renderer
 let controller
@@ -72,6 +72,9 @@ function init() {
 
     const modelMenu = document.querySelector("#modelMenu")
     const menuButton = document.querySelector("#menuBtn")
+    const menuTextShow = document.querySelector(".menuTextShow")
+    const menuTextHide = document.querySelector(".menuTextHide")
+
 
     menuButton.addEventListener("click", toggleMenu)
 
@@ -84,11 +87,17 @@ function init() {
     }
 
     function openMenu() {
+        console.log("Avaa")
         modelMenu.classList.add("open")
+        menuTextShow.classList.add("hide")
+        menuTextHide.classList.remove("hide")
     }
 
     function closeMenu() {
+        console.log("Sulje")
         modelMenu.classList.remove("open")
+        menuTextShow.classList.remove("hide")
+        menuTextHide.classList.add("hide")
     }
 
     
@@ -119,6 +128,8 @@ function init() {
 
         scene.add(clone);
         placedModels[selectedModelPath] = clone;
+
+        console.log(placedModels)
     }
 
     const light = new THREE.HemisphereLight(0xffffff, 0x000000, 1)
@@ -140,6 +151,20 @@ function init() {
         })
     }
 
+    function cleanupAR() {
+        console.log(placedModels)
+        console.log(loadedModels)
+        // Poista kaikki asetetut maalaukset
+        for (const key in placedModels) {
+            scene.remove(placedModels[key]);
+        }
+        placedModels.length = 0
+
+        // Piilota pointer
+        if (pointer) pointer.visible = false;
+    }
+
+
     function render(time, frame) {
         if (frame) {
             if (!hitTestSourceAvailable) {
@@ -160,44 +185,19 @@ function init() {
         renderer.render(scene, camera)
     }
 
-    // function render(time, frame) {
-    //     if (frame) {
-    //         if (!hitTestSourceAvailable) {
-    //             initHitSource();
-    //         }
-            
-    //         if (hitTestSourceAvailable) {
-    //             const hitTestResults = frame.getHitTestResults(hitTestSource);
-                
-    //             if (hitTestResults.length > 0) {
-    //                 const hit = hitTestResults[0];
-    //                 const pose = hit.getPose(localSpace);
-
-    //                 // Luodaan apumatriisi ja vektori pinnan suunnan tarkistamiseen
-    //                 const matrix = new THREE.Matrix4().fromArray(pose.transform.matrix);
-    //                 const normal = new THREE.Vector3(0, 0, 1).applyMatrix4(matrix).normalize();
-
-    //                 // Tarkistetaan onko kyseessä pystypinta (seinä)
-    //                 // Jos Y-akselin suuntainen arvo on lähellä nollaa, pinta on pystyssä.
-    //                 // Kynnysarvo 0.2 sallii pienet vinoudet, mutta hylkää lattiat (Y ~ 1).
-    //                 if (Math.abs(normal.y) < 0.2) {
-    //                     pointer.matrix.fromArray(pose.transform.matrix);
-    //                     pointer.visible = true;
-    //                 } else {
-    //                     // Jos pinta on vaakasuora (lattia/katto), piilotetaan pointer
-    //                     pointer.visible = false;
-    //                 }
-    //             } else {
-    //                 pointer.visible = false;
-    //             }
-    //         }
-    //     }
-    //     renderer.render(scene, camera);
-    // }
-
     const arButton = ARButton.createButton(renderer, {
         requiredFeatures: ['hit-test']
     })
+
+    // renderer.xr.addEventListener("sessionstart", () => {
+    //     console.log("AR-tila käynnistyi");
+    //     arButton.textContent = "Poistu AR";
+    // });
+
+    renderer.xr.addEventListener("sessionend", () => {
+        cleanupAR();
+    });
+
 
     document.body.appendChild(arButton)
 

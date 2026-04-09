@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
 body  {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100vh;
 }
 
@@ -189,7 +193,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 999;
+    z-index: 100003;
 }
 
 .navButton {
@@ -236,10 +240,14 @@ header {
 /* Painting alasivu */
 
 .arbody {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
     background-image: url("../assets/images/background.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 .modelMenu {
@@ -273,6 +281,14 @@ header {
 .menuBtn p {
     font-size: 15px;
     margin: 0; 
+}
+
+.menuTextOpen, .menuTextClose {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
 }
 
 .menuArrow {
@@ -327,14 +343,12 @@ header {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 25px; /* Säädä kokoa */
+    width: 25px;
     height: 25px;
     display: none;
-    pointer-events: none; /* Klikkaukset menevät läpi li-elementille */
+    pointer-events: none;
     filter: brightness(0) invert(1) drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
 }
-
-/* Näytetään ikoni vain, kun li-elementillä on .selected-luokka */
 
 #modelList li.selected img.menu-image {
     transform: scale(1.05);
@@ -345,6 +359,7 @@ header {
     display: block;
     transform: translateX(-50%);
 }
+
 
 button#ARButton {
     bottom: 100px !important;
