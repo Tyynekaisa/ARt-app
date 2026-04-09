@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
-    overflow: hidden;
-    height: 100%;
-}
-
-body  {
+body {
     margin: 0;
     padding: 0;
+    background-color: antiquewhite;
+}
+
+.galleryBody, .artwallbody {
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -238,9 +238,9 @@ header {
 }
 
 
-/* Painting alasivu */
+/* ARt Wall alasivu */
 
-.arbody, .guidebody {
+.artwallbody {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -381,4 +381,44 @@ button#ARButton:hover {
     z-index: 100;
 } */
 
+/* Tutorial-sivu */
 
+.tutorial-container {
+    width: 80%;
+    margin: 90px auto;
+}
+
+.tutorial {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.tutorial-container h1 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+.tutorial h2 {
+    font-size: 30px;
+}
+
+.tutorial h3 {
+    font-size: 20px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tutorial p, .tutorial li {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tutorial-iconrow {
+    display: flex;
+}
+.tutorialIcon {
+    width: 20px;
+    margin-right: 10px;
+}

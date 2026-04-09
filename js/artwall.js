@@ -105,13 +105,13 @@ function init() {
     clone.position.setFromMatrixPosition(pointer.matrix)
     clone.quaternion.setFromRotationMatrix(controller.matrixWorld)
 
-    const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3)
-    light.position.set(0, 0, 1)
-    light.target = clone
-    clone.add(light)
-    clone.add(light.target)
+    // const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3)
+    // light.position.set(0, 0, 1)
+    // light.target = clone
+    // clone.add(light)
+    // clone.add(light.target)
 
-    const frameLight = new THREE.PointLight(0xffffff, 1.0, 1)
+    const frameLight = new THREE.PointLight(0xffffff, 1.0, 2)
     frameLight.position.set(0, 0, 1)
     clone.add(frameLight)
 
