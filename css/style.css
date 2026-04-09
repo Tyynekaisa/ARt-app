@@ -4,22 +4,21 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
-    width: 100%;
 }
 
-.galleryBody, .artwallbody {
-    overflow: hidden;
-    height: 100vh;
-    
+.galleryBody {
+    position: fixed;
+    inset: 0;
 }
 
 h1 {
@@ -76,7 +75,7 @@ td {
 
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     left: 0;
     right: 0;
     top: 0;
@@ -234,7 +233,7 @@ header {
 
 .bottomNavigation {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     left: 0;
     right: 0;
     bottom: 0;
@@ -290,10 +289,6 @@ header {
 /* ARt Wall alasivu */
 
 .artwallbody {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
     background-image: url("../assets/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -431,6 +426,10 @@ button#ARButton:hover {
 } */
 
 /* Tutorial-sivu */
+
+.guidebody {
+    overflow-y: auto;
+}
 
 .tutorial-container {
     width: 80%;
