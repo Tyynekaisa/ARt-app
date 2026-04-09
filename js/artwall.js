@@ -1,7 +1,7 @@
 // artwall.js
 
 import { ARButton } from 'https://unpkg.com/three@0.126.0/examples/jsm/webxr/ARButton.js'
-import { buildModelMenu } from './menuBuilder.js'
+import { buildModelMenu } from 'https://tyynekaisa.github.io/ARt-app/js/menuBuilder.js'
 
 let camera, scene, renderer
 let controller
