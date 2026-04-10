@@ -134,13 +134,13 @@ function init() {
     })
   }
   
-  function cleanupAR() {
-    for (const key in placedModels) {
-        scene.remove(placedModels[key])
-    }
-    placedModels = {}
-    if (pointer) pointer.visible = false
-  }
+  // function cleanupAR() {
+  //   for (const key in placedModels) {
+  //       scene.remove(placedModels[key])
+  //   }
+  //   placedModels = {}
+  //   if (pointer) pointer.visible = false
+  // }
   
   function render(time, frame) {
     if (frame) {
@@ -166,18 +166,21 @@ function init() {
     requiredFeatures: ['hit-test', 'dom-overlay'],
     domOverlay: {root: document.body}
   })
+  document.body.appendChild(arButton)
+  
   
   renderer.xr.addEventListener('sessionstart', () => {
-    document.body.classList.add('ar-active')
+    
   })
 
   renderer.xr.addEventListener('sessionend', () => {
     // cleanupAR()
-    document.body.classList.remove('ar-active')
+    
     location.reload()
   })
+
   
-  document.body.appendChild(arButton)
+  
 }
 
 init()
