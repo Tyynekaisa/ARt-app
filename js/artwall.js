@@ -163,7 +163,8 @@ function init() {
   }
   
   const arButton = ARButton.createButton(renderer, {
-    requiredFeatures: ['hit-test']
+    requiredFeatures: ['hit-test', 'dom-overlay'],
+    domOverlay: {root: document.body}
   })
   
   // renderer.xr.addEventListener('sessionstart', () => {

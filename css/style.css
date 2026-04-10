@@ -86,6 +86,7 @@ header {
     justify-content: space-evenly;
     z-index: 100003;
     border-bottom: 3px solid #b19258;
+    pointer-events: auto;
 }
 
 .logo {
@@ -243,6 +244,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     z-index: 100003;
+    pointer-events: auto;
 }
 
 .navButton {
@@ -306,6 +308,7 @@ header {
     padding: 10px 0;
     transition: 0.3s ease;
     z-index: 100002;
+    pointer-events: auto;
 }
 
 .modelMenu.open {
