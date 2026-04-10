@@ -44,7 +44,7 @@ function init() {
   container.appendChild(renderer.domElement)
   
   // Pointer
-  const ringGeometry = new THREE.RingGeometry(0.2, 0.3, 32)
+  const ringGeometry = new THREE.RingGeometry(0.25, 0.3, 32)
   const ringMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff })
   pointer = new THREE.Mesh(ringGeometry, ringMaterial)
   pointer.matrixAutoUpdate = false
@@ -167,12 +167,25 @@ function init() {
     domOverlay: {root: document.body}
   })
   
-  // renderer.xr.addEventListener('sessionstart', () => {
-  //     console.log('AR-tila käynnistyy')
-  // })
-  
+  renderer.xr.addEventListener('sessionstart', () => {
+    document.body.classList.add('ar-active')
+  })
+
   renderer.xr.addEventListener('sessionend', () => {
     cleanupAR()
+    const canvas = renderer.domElement
+    canvas.style.position = 'relative'
+    canvas.style.top = '0'
+    canvas.style.left = '0'
+    canvas.style.width = '100%'
+    canvas.style.height = '100%'
+
+    // Päivitä rendererin koko
+    renderer.setSize(window.innerWidth, window.innerHeight)
+
+    // Näytä UI normaalisti
+    document.body.classList.remove('ar-active')
+    document.body.style.opacity = '1'
   })
   
   document.body.appendChild(arButton)
