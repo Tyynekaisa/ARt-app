@@ -105,21 +105,21 @@ function init() {
     clone.position.setFromMatrixPosition(pointer.matrix)
     clone.quaternion.setFromRotationMatrix(controller.matrixWorld)
 
-    // const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3)
-    // light.position.set(0, 0, 1)
-    // light.target = clone
-    // clone.add(light)
-    // clone.add(light.target)
+    const light = new THREE.SpotLight(0xffffff, 1.2, 3, Math.PI / 6, 0.3)
+    light.position.set(0, 0, 1)
+    light.target = clone
+    clone.add(light)
+    clone.add(light.target)
 
-    const frameLight = new THREE.PointLight(0xffffff, 1.0, 2)
-    frameLight.position.set(0, 0, 1)
-    clone.add(frameLight)
+    // const frameLight = new THREE.PointLight(0xffffff, 1.0, 3)
+    // frameLight.position.set(0, 0, 0.5)
+    // clone.add(frameLight)
 
     scene.add(clone)
     placedModels[selectedModelPath] = clone
   }
   
-  
+  renderer.setAnimationLoop(render)
   
   async function initHitSource() {
     const session = renderer.xr.getSession()
@@ -161,11 +161,6 @@ function init() {
     }
     renderer.render(scene, camera)
   }
-
-  function normalRenderLoop() {
-    renderer.render(scene, camera);
-  }
-
   
   const arButton = ARButton.createButton(renderer, {
     requiredFeatures: ['hit-test', 'dom-overlay'],
@@ -173,20 +168,13 @@ function init() {
   })
   
   renderer.xr.addEventListener('sessionstart', () => {
-    renderer.setAnimationLoop(render)
+    document.body.classList.add('ar-active')
   })
 
   renderer.xr.addEventListener('sessionend', () => {
-    cleanupAR()
-    renderer.setAnimationLoop(null); // Lopeta XR-loop
-
-    // Palauta normaali renderöinti
-    function resumeNormal() {
-        normalRenderLoop();
-        requestAnimationFrame(resumeNormal);
-    }
-    requestAnimationFrame(resumeNormal);
-
+    // cleanupAR()
+    document.body.classList.remove('ar-active')
+    location.reload()
   })
   
   document.body.appendChild(arButton)
