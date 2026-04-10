@@ -119,7 +119,7 @@ function init() {
     placedModels[selectedModelPath] = clone
   }
   
-  renderer.setAnimationLoop(render)
+  
   
   async function initHitSource() {
     const session = renderer.xr.getSession()
@@ -161,6 +161,11 @@ function init() {
     }
     renderer.render(scene, camera)
   }
+
+  function normalRenderLoop() {
+    renderer.render(scene, camera);
+  }
+
   
   const arButton = ARButton.createButton(renderer, {
     requiredFeatures: ['hit-test', 'dom-overlay'],
@@ -168,24 +173,20 @@ function init() {
   })
   
   renderer.xr.addEventListener('sessionstart', () => {
-    document.body.classList.add('ar-active')
+    renderer.setAnimationLoop(render)
   })
 
   renderer.xr.addEventListener('sessionend', () => {
     cleanupAR()
-    const canvas = renderer.domElement
-    canvas.style.position = 'relative'
-    canvas.style.top = '0'
-    canvas.style.left = '0'
-    canvas.style.width = '100%'
-    canvas.style.height = '100%'
+    renderer.setAnimationLoop(null); // Lopeta XR-loop
 
-    // Päivitä rendererin koko
-    renderer.setSize(window.innerWidth, window.innerHeight)
+    // Palauta normaali renderöinti
+    function resumeNormal() {
+        normalRenderLoop();
+        requestAnimationFrame(resumeNormal);
+    }
+    requestAnimationFrame(resumeNormal);
 
-    // Näytä UI normaalisti
-    document.body.classList.remove('ar-active')
-    document.body.style.opacity = '1'
   })
   
   document.body.appendChild(arButton)
