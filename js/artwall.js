@@ -111,10 +111,6 @@ function init() {
     clone.add(light)
     clone.add(light.target)
 
-    // const frameLight = new THREE.PointLight(0xffffff, 1.0, 3)
-    // frameLight.position.set(0, 0, 0.5)
-    // clone.add(frameLight)
-
     scene.add(clone)
     placedModels[selectedModelPath] = clone
   }
@@ -133,14 +129,6 @@ function init() {
       hitTestSource = null
     })
   }
-  
-  // function cleanupAR() {
-  //   for (const key in placedModels) {
-  //       scene.remove(placedModels[key])
-  //   }
-  //   placedModels = {}
-  //   if (pointer) pointer.visible = false
-  // }
   
   function render(time, frame) {
     if (frame) {
@@ -168,18 +156,13 @@ function init() {
   })
   document.body.appendChild(arButton)
   
-  
   renderer.xr.addEventListener('sessionstart', () => {
     
   })
 
   renderer.xr.addEventListener('sessionend', () => {
-    // cleanupAR()
-    
     location.reload()
   })
-
-  
   
 }
 
