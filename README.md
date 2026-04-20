@@ -54,6 +54,8 @@ Sovellusta voit käyttää osoitteessa: [tyynekaisa.github.io/ARt-app/](https://
 
 Lähdekoodi löytyy GitHub reposta: [Tyynekaisa/ARt-app](https://github.com/Tyynekaisa/ARt-app)
 
+---
+---
 
 ## © Copyrights (all rights reserved)
 
@@ -69,3 +71,11 @@ Lähdekoodi löytyy GitHub reposta: [Tyynekaisa/ARt-app](https://github.com/Tyyn
 #### 3D Models:
 
 - Anna-Kaisa Juhola
+
+You may NOT:
+- Copy
+- Redistribute
+- Modify
+- Use commercially
+
+these without explicit permission.
